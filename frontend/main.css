@@ -10,10 +10,8 @@ a {
   padding: 10px 20px;
 }
 
-h1,
-ul,
 li,
-nav {
+h1 {
   display: inline;
 }
 
@@ -34,11 +32,12 @@ header {
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #013243;
   color: #eeeeee;
 }
 
 nav {
   display: flex;
-  align-content: center;
+  align-items: center;
 }
