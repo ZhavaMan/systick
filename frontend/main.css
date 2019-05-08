@@ -4,30 +4,6 @@ body {
   background-color: #eeeeee;
 }
 
-a {
-  text-decoration: none;
-  color: #eeeeee;
-  padding: 10px 20px;
-}
-
-li,
-h1 {
-  display: inline;
-}
-
-h1 {
-  margin: 0;
-}
-
-ul {
-  padding: 0;
-}
-
-li.nav-item:hover a,
-li.nav-item.active a {
-  background-color: #003a4f;
-}
-
 header {
   padding: 20px 40px;
   display: flex;
@@ -37,7 +13,56 @@ header {
   color: #eeeeee;
 }
 
+h1 {
+  margin: 0;
+}
+
 nav {
-  display: flex;
-  align-items: center;
+  font-size: 16px;
+}
+
+.nav {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-item {
+  display: inline;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  background-color: #003a4f;
+}
+
+.nav-item.opened {
+  background-color: #002c3d;
+}
+
+.subnav {
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  background-color: #002c3d;
+  padding: 0;
+}
+
+.nav-item.opened .subnav{
+  display: block;
+}
+
+.subnav-item {
+  display: block;
+  padding: 10px 20px;
+}
+
+.subnav-item:hover {
+  background-color: #003a4f;
 }
